@@ -1,7 +1,7 @@
 CREATE DATABASE twitterdb;
  
 
-CREATE TABLE tweets (
+CREATE TABLE IF NOT EXISTS tweets (
  	   tweet_id VARCHAR(255) PRIMARY KEY,
   	  username VARCHAR(255) NOT NULL,
  	   content TEXT NOT NULL,
